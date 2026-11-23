@@ -1,0 +1,35 @@
+# Environment dan credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Backup database
+backup/
+*.tar.gz
+*.archive
+*_backup.sql
+*_seed_*.sql
+
+# Database data dan volume
+data/
+volumes/
+mongo-data/
+mysql-data/
+redis-data/
+cassandra-data/
+
+# Dependencies dan cache
+node_modules/
+vendor/
+__pycache__/
+*.log
+
+# IDE dan OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+docker-compose-backup*.yml
